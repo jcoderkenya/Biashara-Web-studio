@@ -3,21 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Biashara Web Studio | High-Converting Websites for Kenyan Hospitality &amp; SMEs</title>
+  <title>Biashara Web Studio | High-Converting Websites for Kenyan Hospitality & SMEs</title>
   <meta name="description" content="Professional, mobile-ready websites for Kenyan hotels, resorts, lodges, restaurants, and SMEs. Boost direct bookings, WhatsApp inquiries, and M-Pesa payments." />
-  
-  <!-- Open Graph Meta -->
+
   <meta property="og:title" content="Biashara Web Studio · Web Design for Kenyan Businesses" />
   <meta property="og:description" content="Boost direct bookings, cut OTA commissions, and collect M-Pesa deposits on your custom website." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80" />
 
-  <!-- Google Fonts: Syne & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
 
-  <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -49,6 +46,7 @@
       background-color: #00D166;
       color: #0A0F1D;
     }
+
     .glow-green {
       box-shadow: 0 0 35px -5px rgba(0, 209, 102, 0.25);
     }
@@ -56,8 +54,6 @@
 </head>
 
 <body class="bg-brand-black text-slate-100 font-sans antialiased selection:bg-brand-green selection:text-brand-black">
-
-  <!-- Top Kenyan Business Trust Bar -->
   <aside class="bg-brand-surface border-b border-slate-800 text-xs py-2 px-4 text-slate-300 font-medium" aria-label="Key agency values">
     <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
       <div class="flex items-center gap-2">
@@ -74,11 +70,8 @@
     </div>
   </aside>
 
-  <!-- Sticky Navigation Header -->
   <header class="sticky top-0 z-40 bg-brand-black/90 backdrop-blur-md border-b border-slate-800/80">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      
-      <!-- Brand Logo -->
       <a href="#home" class="flex items-center gap-3">
         <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-green to-emerald-400 flex items-center justify-center text-brand-black font-display font-extrabold text-xl shadow-lg">
           B
@@ -89,7 +82,6 @@
         </div>
       </a>
 
-      <!-- Desktop Navigation Menu -->
       <nav class="hidden md:flex items-center space-x-7 text-sm font-semibold tracking-wide text-slate-300">
         <a href="#services" class="hover:text-brand-green transition-colors">Why Biashara</a>
         <a href="#portfolio" class="hover:text-brand-green transition-colors">Portfolio</a>
@@ -99,21 +91,18 @@
         <a href="#faq" class="hover:text-brand-green transition-colors">FAQs</a>
       </nav>
 
-      <!-- Action Buttons -->
       <div class="flex items-center gap-3">
         <a href="https://wa.me/254758063552?text=Hello%20Biashara%20Web%20Studio%2C%20I%20want%20to%20request%20a%20free%20sample%20preview%20for%20my%20business." target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 bg-brand-green hover:bg-emerald-400 text-brand-black px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold tracking-wide transition-all shadow-md">
           <span>WhatsApp 0758063552</span>
           <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
         </a>
 
-        <!-- Mobile hamburger -->
         <button onclick="toggleMobileMenu()" class="md:hidden p-2 text-slate-400 hover:text-white" aria-label="Toggle navigation">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
         </button>
       </div>
     </div>
 
-    <!-- Mobile Drawer -->
     <div id="mobile-menu" class="hidden md:hidden bg-brand-surface border-b border-slate-800 px-6 py-6 space-y-4">
       <a href="#services" onclick="toggleMobileMenu()" class="block text-base font-semibold py-1">Why Biashara</a>
       <a href="#portfolio" onclick="toggleMobileMenu()" class="block text-base font-semibold py-1">Live Portfolio</a>
@@ -130,14 +119,11 @@
   </header>
 
   <main id="home">
-    <!-- HERO SECTION -->
     <section class="relative pt-12 pb-20 md:py-28 overflow-hidden">
       <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-brand-green/10 rounded-full blur-3xl pointer-events-none"></div>
 
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
-          <!-- Hero Copy -->
           <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
             <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-surface border border-slate-700 text-xs font-semibold uppercase tracking-wider text-brand-green">
               <span class="w-2 h-2 rounded-full bg-brand-green animate-ping"></span>
@@ -155,13 +141,11 @@
               Stop losing 18% to 25% of your hard-earned revenue to Booking.com, Airbnb, and middlemen. We build ultra-fast, mobile-first websites with direct WhatsApp room bookings, verified review sections, and instant M-Pesa payment cards.
             </p>
 
-            <!-- Pricing Callout Chip -->
             <div class="inline-flex flex-wrap items-center justify-center lg:justify-start gap-3 p-2 bg-brand-surface/80 rounded-2xl border border-slate-700/80 text-xs sm:text-sm">
               <span class="bg-brand-green/20 text-brand-green font-bold px-3 py-1 rounded-xl">Standard Plan: KSh 8,500</span>
               <span class="text-slate-300">KSh 4,500 deposit upfront &bull; Balance only upon final approval</span>
             </div>
 
-            <!-- CTA Buttons -->
             <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
               <a href="https://wa.me/254758063552?text=Hello%20Biashara%20Web%20Studio%2C%20I%20want%20to%20request%20a%20free%20sample%20preview%20for%20my%20business." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-brand-green hover:bg-emerald-400 text-brand-black font-extrabold px-8 py-4 rounded-xl shadow-xl glow-green transition-all transform hover:-translate-y-0.5">
                 <span>Enquire via WhatsApp</span>
@@ -172,7 +156,6 @@
               </a>
             </div>
 
-            <!-- Trust Points -->
             <div class="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-slate-400 font-medium">
               <span class="flex items-center gap-1.5"><span class="text-brand-green font-bold">&check;</span> 1st-Year Domain Included</span>
               <span class="flex items-center gap-1.5"><span class="text-brand-green font-bold">&check;</span> Cloudflare 99.9% Uptime</span>
@@ -180,14 +163,11 @@
             </div>
           </div>
 
-          <!-- Hero Mockup Card -->
           <div class="lg:col-span-5 relative">
             <div class="relative mx-auto max-w-md lg:max-w-none">
               <div class="absolute -inset-1.5 rounded-3xl bg-gradient-to-r from-brand-green/30 to-brand-accent/30 blur-xl opacity-75"></div>
 
               <div class="relative rounded-2xl bg-brand-surface border border-slate-700/80 overflow-hidden shadow-2xl p-5 space-y-4">
-                
-                <!-- Mockup Browser Header -->
                 <div class="flex items-center justify-between border-b border-slate-800 pb-3">
                   <div class="flex items-center gap-1.5">
                     <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
@@ -200,7 +180,6 @@
                   <span class="text-xs text-brand-green font-bold">READY</span>
                 </div>
 
-                <!-- Showcase Preview Image -->
                 <div class="rounded-xl overflow-hidden aspect-video relative group">
                   <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Kenyan Luxury Hotel Showcase" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   <div class="absolute inset-0 bg-gradient-to-t from-brand-black/90 via-transparent to-transparent flex items-end p-4">
@@ -211,7 +190,6 @@
                   </div>
                 </div>
 
-                <!-- Simulated Feature Chips -->
                 <div class="grid grid-cols-2 gap-2 text-xs">
                   <div class="p-2.5 rounded-lg bg-brand-black/80 border border-slate-800 flex items-center gap-2">
                     <div class="w-7 h-7 rounded-md bg-emerald-500/20 text-brand-green flex items-center justify-center font-bold">M</div>
@@ -235,19 +213,15 @@
                     <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                   </a>
                 </div>
-
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
 
-    <!-- CORE VALUE PILLARS -->
     <section id="services" class="py-20 bg-brand-surface border-y border-slate-800">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
           <span class="text-xs font-bold tracking-widest uppercase text-brand-green">Built For Real Revenue</span>
           <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-white">
@@ -259,8 +233,6 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
-          <!-- Pillar 1 -->
           <div class="p-8 rounded-2xl bg-brand-card border border-slate-800 hover:border-slate-700 transition duration-300 space-y-4">
             <div class="w-12 h-12 rounded-xl bg-brand-green/10 text-brand-green flex items-center justify-center text-xl font-bold">
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
@@ -271,683 +243,223 @@
             </p>
           </div>
 
-          <!-- Pillar 2 -->
           <div class="p-8 rounded-2xl bg-brand-card border border-slate-800 hover:border-slate-700 transition duration-300 space-y-4">
             <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-brand-green flex items-center justify-center text-xl font-bold">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2V9a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm0 0h2m-2 0a2 2 0 110 4h8a2 2 0 002-2v-4a2 2 0 00-2-2h-2"/></svg>
             </div>
-            <h3 class="font-display text-xl font-bold text-white">M-Pesa Paybill &amp; Till Integration</h3>
+            <h3 class="font-display text-xl font-bold text-white">M-Pesa Conversion Setup</h3>
             <p class="text-sm text-slate-400 leading-relaxed">
-              Eliminate payment hesitation. Display clean, 1-click copy-to-clipboard Buy Goods Till Numbers, Paybills, or direct payment cards on every client reservation.
+              We add trust-building payment cards, clear deposit instructions, and secure M-Pesa flows that make customers feel safe paying upfront.
             </p>
           </div>
 
-          <!-- Pillar 3 -->
           <div class="p-8 rounded-2xl bg-brand-card border border-slate-800 hover:border-slate-700 transition duration-300 space-y-4">
             <div class="w-12 h-12 rounded-xl bg-brand-accent/10 text-brand-accent flex items-center justify-center text-xl font-bold">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
             </div>
-            <h3 class="font-display text-xl font-bold text-white">Zero Bloat &amp; Sub-Second Speed</h3>
+            <h3 class="font-display text-xl font-bold text-white">Fast &amp; Search-Friendly</h3>
             <p class="text-sm text-slate-400 leading-relaxed">
-              No slow, heavy WordPress plugins that crash on unstable mobile connections. Our code loads instantly on Kenyan 4G/3G networks via Cloudflare edge hosting.
+              Your website is optimized for speed, mobile readability, and strong local SEO so Kenyan customers find you faster and book sooner.
             </p>
           </div>
-
         </div>
-
       </div>
     </section>
 
-    <!-- LIVE PORTFOLIO SHOWCASE -->
-    <section id="portfolio" class="py-24 bg-brand-black">
+    <section id="portfolio" class="py-20 bg-brand-black">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
-          <div class="space-y-3">
-            <span class="text-xs font-bold tracking-widest uppercase text-brand-green">Proof of Work</span>
-            <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-white">
-              Featured Client Showcase
-            </h2>
-            <p class="text-sm sm:text-base text-slate-400 max-w-xl">
-              Inspect how our live hospitality deployments look and convert on real guest smartphones.
-            </p>
-          </div>
-
-          <div>
-            <a href="https://chogoria-cabin.pages.dev/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-brand-surface border border-slate-700 hover:border-brand-green text-white font-bold text-xs sm:text-sm px-6 py-3.5 rounded-xl transition-all">
-              <span>Visit chogoria-cabin.pages.dev</span>
-              <svg class="w-4 h-4 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-            </a>
-          </div>
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-bold tracking-widest uppercase text-brand-green">Live Portfolio</span>
+          <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-white mt-3">Recent Work Built for Conversion</h2>
         </div>
 
-        <!-- Featured Case Study Card -->
-        <div class="rounded-3xl bg-brand-surface border border-slate-800 overflow-hidden shadow-2xl">
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            
-            <!-- Showcase Image -->
-            <div class="lg:col-span-7 h-72 sm:h-96 lg:h-full relative overflow-hidden bg-slate-900">
-              <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80" alt="Chogoria Cabin Live Web Deployment" class="w-full h-full object-cover" />
-              <div class="absolute inset-0 bg-gradient-to-r from-transparent via-brand-surface/40 to-brand-surface hidden lg:block"></div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <article class="rounded-3xl border border-slate-800 bg-brand-surface overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=900&q=80" alt="Hospitality project" class="h-56 w-full object-cover" />
+            <div class="p-6 space-y-3">
+              <span class="text-xs uppercase tracking-widest text-brand-green font-bold">Lodge &amp; Resort</span>
+              <h3 class="font-display text-2xl font-bold text-white">Chogoria Cabin</h3>
+              <p class="text-slate-400 text-sm">Luxury stay branding, direct booking flow, and M-Pesa deposit messaging designed to improve trust and conversions.</p>
             </div>
+          </article>
 
-            <!-- Showcase Details -->
-            <div class="lg:col-span-5 p-6 sm:p-10 space-y-6">
-              <div class="inline-block bg-emerald-500/10 text-brand-green text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full border border-emerald-500/20">
-                Hospitality &amp; Cabin Retreat
-              </div>
-
-              <h3 class="font-display text-2xl sm:text-3xl font-extrabold text-white">
-                Chogoria Cabin &middot; Mount Kenya
-              </h3>
-
-              <p class="text-sm text-slate-300 leading-relaxed">
-                A custom, mobile-first retreat website engineered to capture direct guest inquiries for Mount Kenya travelers and hikers. Features WhatsApp booking routing, directions, verified guest testimonials, and direct M-Pesa deposit handling.
-              </p>
-
-              <div class="space-y-2.5 text-xs text-slate-300">
-                <div class="flex items-center gap-2">
-                  <span class="text-brand-green font-bold">&check;</span>
-                  <span>WhatsApp direct booking with date selections</span>
-                </div>
-                <div class="flex items-center gap-2">
-                  <span class="text-brand-green font-bold">&check;</span>
-                  <span>Google Maps pin directions for guests arriving on site</span>
-                </div>
-                <div class="flex items-center gap-2">
-                  <span class="text-brand-green font-bold">&check;</span>
-                  <span>Integrated M-Pesa booking deposit verification</span>
-                </div>
-              </div>
-
-              <div class="pt-2 flex items-center gap-4">
-                <a href="https://chogoria-cabin.pages.dev/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-brand-green text-brand-black px-6 py-3 rounded-xl font-extrabold text-xs tracking-wide hover:bg-emerald-400 transition-colors">
-                  <span>Open Live Website</span>
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                </a>
-              </div>
-
+          <article class="rounded-3xl border border-slate-800 bg-brand-surface overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=900&q=80" alt="Restaurant project" class="h-56 w-full object-cover" />
+            <div class="p-6 space-y-3">
+              <span class="text-xs uppercase tracking-widest text-brand-green font-bold">Hospitality Brand</span>
+              <h3 class="font-display text-2xl font-bold text-white">Hospitality Website</h3>
+              <p class="text-slate-400 text-sm">Responsive design with room categories, local SEO, and direct WhatsApp inquiry flow for service-led bookings.</p>
             </div>
+          </article>
 
-          </div>
+          <article class="rounded-3xl border border-slate-800 bg-brand-surface overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80" alt="Food business project" class="h-56 w-full object-cover" />
+            <div class="p-6 space-y-3">
+              <span class="text-xs uppercase tracking-widest text-brand-green font-bold">SME Growth</span>
+              <h3 class="font-display text-2xl font-bold text-white">SME Conversion Site</h3>
+              <p class="text-slate-400 text-sm">Sales-focused marketing pages helping businesses show proof, explain offers, and convert visitors into leads.</p>
+            </div>
+          </article>
         </div>
-
       </div>
     </section>
 
-    <!-- TRANSPARENT PRICING TIERS -->
-    <section id="pricing" class="py-24 bg-brand-surface border-y border-slate-800">
+    <section id="pricing" class="py-20 bg-brand-surface border-y border-slate-800">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <span class="text-xs font-bold tracking-widest uppercase text-brand-green">Clear, Honest Investment</span>
-          <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-white">
-            Transparent Pricing Tiers
-          </h2>
-          <p class="text-sm sm:text-base text-slate-400">
-            No unexpected monthly subscription surprises. You pay for what brings your business tangible bookings.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch max-w-5xl mx-auto">
-          
-          <!-- TIER 1: STANDARD MOBILE WEBSITE -->
-          <div class="rounded-3xl bg-brand-card border-2 border-brand-green/60 p-8 sm:p-10 flex flex-col justify-between relative shadow-2xl glow-green">
-            <div class="absolute -top-3.5 right-8 bg-brand-green text-brand-black font-extrabold text-xs tracking-wider uppercase px-3.5 py-1 rounded-full shadow-md">
-              Most Popular for Lodges &amp; SMEs
-            </div>
-
-            <div class="space-y-6">
-              <div>
-                <span class="text-xs font-bold uppercase tracking-wider text-brand-green">Tier 1 &middot; Complete Setup</span>
-                <h3 class="font-display text-2xl sm:text-3xl font-extrabold text-white mt-1">Standard Mobile Website</h3>
-                <p class="text-xs sm:text-sm text-slate-400 mt-2">
-                  Everything a hotel, resort, guest house, or SME needs to launch professionally and take bookings.
-                </p>
-              </div>
-
-              <!-- Price Figure -->
-              <div class="p-4 rounded-2xl bg-brand-black/60 border border-slate-800 space-y-1">
-                <div class="flex items-baseline gap-2">
-                  <span class="text-xs font-bold text-slate-400">Total:</span>
-                  <span class="font-display text-3xl sm:text-4xl font-extrabold text-white">KSh 8,500</span>
-                  <span class="text-xs text-slate-400 font-medium">all-inclusive</span>
-                </div>
-                <!-- Milestone Breakdown -->
-                <div class="pt-2 border-t border-slate-800 text-xs flex flex-col sm:flex-row justify-between gap-1 text-slate-300">
-                  <span><strong>Deposit:</strong> KSh 4,500 upfront to begin</span>
-                  <span><strong>Balance:</strong> KSh 4,000 on final approval</span>
-                </div>
-              </div>
-
-              <!-- Inclusions Checklist -->
-              <div class="space-y-3 text-xs sm:text-sm text-slate-300">
-                <div class="flex items-start gap-2.5">
-                  <span class="text-brand-green font-bold shrink-0">&check;</span>
-                  <span><strong>1st-Year Domain Included</strong> (.co.ke or .com domain registration)</span>
-                </div>
-                <div class="flex items-start gap-2.5">
-                  <span class="text-brand-green font-bold shrink-0">&check;</span>
-                  <span><strong>Custom Mobile-First Design</strong> crafted for Kenyan smartphone speeds</span>
-                </div>
-                <div class="flex items-start gap-2.5">
-                  <span class="text-brand-green font-bold shrink-0">&check;</span>
-                  <span><strong>WhatsApp Direct Booking</strong> integration with pre-filled inquiries</span>
-                </div>
-                <div class="flex items-start gap-2.5">
-                  <span class="text-brand-green font-bold shrink-0">&check;</span>
-                  <span><strong>M-Pesa &amp; Paybill Setup</strong> (Till / Buy Goods verification card)</span>
-                </div>
-                <div class="flex items-start gap-2.5">
-                  <span class="text-brand-green font-bold shrink-0">&check;</span>
-                  <span><strong>Google Maps Integration</strong> for guest road directions</span>
-                </div>
-                <div class="flex items-start gap-2.5">
-                  <span class="text-brand-green font-bold shrink-0">&check;</span>
-                  <span><strong>Photo &amp; Video Showcase</strong> with accessible lightbox previews</span>
-                </div>
-                <div class="flex items-start gap-2.5">
-                  <span class="text-brand-green font-bold shrink-0">&check;</span>
-                  <span><strong>Customer Reviews Layout</strong> ready for genuine guest ratings</span>
-                </div>
-                <div class="flex items-start gap-2.5">
-                  <span class="text-brand-green font-bold shrink-0">&check;</span>
-                  <span><strong>100% Code Ownership</strong> &amp; Cloudflare high-speed hosting setup</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="pt-8">
-              <a href="https://wa.me/254758063552?text=Hello%20Biashara%20Web%20Studio%2C%20I%20want%20to%20order%20the%20Standard%20Website%20Package%20for%20KSh%208%2C500%20(KSh%204%2C500%20Deposit)." target="_blank" rel="noopener noreferrer" class="w-full py-4 rounded-xl bg-brand-green hover:bg-emerald-400 text-brand-black font-extrabold text-sm flex items-center justify-center gap-2 transition-all shadow-lg">
-                <span>Start Project with KSh 4,500 Deposit</span>
-                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
-              </a>
-            </div>
-          </div>
-
-          <!-- TIER 2: AUTOMATED M-PESA STK PUSH PACKAGE -->
-          <div class="rounded-3xl bg-brand-card border border-slate-800 p-8 sm:p-10 flex flex-col justify-between relative shadow-xl">
-            <div class="space-y-6">
-              <div>
-                <span class="text-xs font-bold uppercase tracking-wider text-brand-accent">Tier 2 &middot; Advanced Automation</span>
-                <h3 class="font-display text-2xl sm:text-3xl font-extrabold text-white mt-1">Automated M-Pesa STK Push</h3>
-                <p class="text-xs sm:text-sm text-slate-400 mt-2">
-                  For high-volume resorts, safari camps, and commercial ticketing requiring immediate automatic PIN prompts.
-                </p>
-              </div>
-
-              <div class="p-4 rounded-2xl bg-brand-black/60 border border-slate-800 space-y-1">
-                <div class="flex items-baseline gap-2">
-                  <span class="text-xs font-bold text-slate-400">Total:</span>
-                  <span class="font-display text-3xl sm:text-4xl font-extrabold text-white">KSh 30,000</span>
-                  <span class="text-xs text-slate-400 font-medium">one-off build</span>
-                </div>
-                <div class="pt-2 border-t border-slate-800 text-xs text-slate-300">
-                  <span>Powered by official Safaricom Daraja v2 API</span>
-                </div>
-              </div>
-
-              <div class="space-y-3 text-xs sm:text-sm text-slate-300">
-                <div class="flex items-start gap-2.5">
-                  <span class="text-brand-accent font-bold shrink-0">&check;</span>
-                  <span><strong>Instant M-Pesa PIN Pop-Up:</strong> Guests enter phone number and their handset automatically prompts for M-Pesa PIN.</span>
-                </div>
-                <div class="flex items-start gap-2.5">
-                  <span class="text-brand-accent font-bold shrink-0">&check;</span>
-                  <span><strong>Live Daraja v2 Callbacks:</strong> Real-time payment verification and instant database booking confirmation.</span>
-                </div>
-                <div class="flex items-start gap-2.5">
-                  <span class="text-brand-accent font-bold shrink-0">&check;</span>
-                  <span><strong>Automated SMS &amp; WhatsApp Receipt:</strong> Immediate confirmation sent to guest upon transaction success.</span>
-                </div>
-                <div class="flex items-start gap-2.5">
-                  <span class="text-brand-accent font-bold shrink-0">&check;</span>
-                  <span><strong>All Standard Tier 1 Features Included</strong> (domain, gallery, maps, Cloudflare edge hosting).</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="pt-8">
-              <a href="https://wa.me/254758063552?text=Hello%20Biashara%20Web%20Studio%2C%20I%20am%20interested%20in%20the%20Automated%20M-Pesa%20STK%20Push%20Package%20(KSh%2030%2C000)." target="_blank" rel="noopener noreferrer" class="w-full py-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-extrabold text-sm flex items-center justify-center gap-2 transition-all border border-slate-700">
-                <span>Inquire About Automated STK Push</span>
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Year 2 Onwards Maintenance Note Card -->
-        <div class="mt-12 max-w-5xl mx-auto rounded-2xl bg-brand-card/80 border border-slate-800 p-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-slate-300">
-          <div class="flex items-center gap-3">
-            <div class="w-8 h-8 rounded-lg bg-amber-500/10 text-brand-gold flex items-center justify-center font-bold shrink-0">
-              ℹ
-            </div>
-            <div>
-              <span class="font-bold text-white block">Annual Renewal (Year 2 Onwards): KSh 3,000 to KSh 5,000 / year</span>
-              <span class="text-slate-400">Covers your domain renewal (.co.ke or .com) and ongoing Cloudflare DNS management. No monthly bills.</span>
-            </div>
-          </div>
-          <span class="font-mono text-brand-green font-semibold shrink-0">Zero Lock-in Guarantee</span>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- M-PESA PAYMENT & CONFIRMATION SECTION -->
-    <section id="payment-info" class="py-24 bg-brand-black border-b border-slate-800">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="rounded-3xl bg-gradient-to-br from-brand-surface via-brand-card to-brand-surface border-2 border-brand-green/60 p-8 sm:p-12 shadow-2xl relative overflow-hidden">
-          
-          <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-brand-green/10 rounded-full blur-2xl pointer-events-none"></div>
-
-          <div class="text-center space-y-3 mb-8">
-            <span class="inline-block bg-brand-green/20 text-brand-green text-xs font-bold uppercase tracking-wider px-3.5 py-1 rounded-full border border-brand-green/30">
-              Official Payment Instructions
-            </span>
-            <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-white">
-              Send M-Pesa &amp; Confirm on WhatsApp
-            </h2>
-            <p class="text-sm text-slate-300 max-w-lg mx-auto">
-              Follow these simple steps to send your project deposit and activate development immediately.
-            </p>
-          </div>
-
-          <!-- Payment Box Card -->
-          <div class="bg-brand-black/90 rounded-2xl border border-slate-700 p-6 space-y-6">
-            
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div class="p-4 rounded-xl bg-brand-surface border border-slate-800">
-                <span class="text-xs text-slate-400 block uppercase font-medium">Payment Method</span>
-                <span class="font-display text-lg font-bold text-white mt-1 block">M-Pesa (Send Money)</span>
-              </div>
-              <div class="p-4 rounded-xl bg-brand-surface border border-slate-800 flex items-center justify-between">
-                <div>
-                  <span class="text-xs text-slate-400 block uppercase font-medium">M-Pesa Number</span>
-                  <span class="font-display text-xl font-extrabold text-brand-green mt-1 block tracking-wider" id="mpesa-number">0758063552</span>
-                </div>
-                <button onclick="copyMpesaNumber()" class="p-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-bold text-slate-200 transition-colors border border-slate-700 flex items-center gap-1.5" title="Copy Number">
-                  <span>Copy</span>
-                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-                </button>
-              </div>
-            </div>
-
-            <!-- Steps -->
-            <div class="space-y-3 pt-2 text-xs sm:text-sm text-slate-300">
-              <div class="flex items-start gap-3">
-                <span class="w-6 h-6 rounded-full bg-brand-green text-brand-black font-bold flex items-center justify-center text-xs shrink-0 mt-0.5">1</span>
-                <span>Open your M-Pesa menu &rarr; Select <strong>Send Money</strong>.</span>
-              </div>
-              <div class="flex items-start gap-3">
-                <span class="w-6 h-6 rounded-full bg-brand-green text-brand-black font-bold flex items-center justify-center text-xs shrink-0 mt-0.5">2</span>
-                <span>Enter Phone Number: <strong class="text-white font-mono">0758063552</strong>.</span>
-              </div>
-              <div class="flex items-start gap-3">
-                <span class="w-6 h-6 rounded-full bg-brand-green text-brand-black font-bold flex items-center justify-center text-xs shrink-0 mt-0.5">3</span>
-                <span>Enter Deposit Amount: <strong class="text-white">KSh 4,500</strong> (for Tier 1 Standard) or <strong class="text-white">KSh 30,000</strong> (for Tier 2 STK Push).</span>
-              </div>
-              <div class="flex items-start gap-3">
-                <span class="w-6 h-6 rounded-full bg-brand-green text-brand-black font-bold flex items-center justify-center text-xs shrink-0 mt-0.5">4</span>
-                <span>Enter your M-Pesa PIN &amp; complete transaction.</span>
-              </div>
-              <div class="flex items-start gap-3">
-                <span class="w-6 h-6 rounded-full bg-brand-green text-brand-black font-bold flex items-center justify-center text-xs shrink-0 mt-0.5">5</span>
-                <span>Tap the green confirmation button below to send your confirmation SMS &amp; selected package on WhatsApp!</span>
-              </div>
-            </div>
-
-            <!-- WhatsApp Confirmation Trigger Buttons -->
-            <div class="pt-4 space-y-3">
-              <a href="https://wa.me/254758063552?text=Hello%20Biashara%20Web%20Studio%2C%20I%20have%20sent%20an%20M-Pesa%20deposit%20to%200758063552.%0A%0APackage%20Selected%3A%20Standard%20Mobile%20Website%20(KSh%208%2C500)%0ADeposit%20Amount%3A%20KSh%204%2C500%0AM-Pesa%20Confirmation%20Code%3A%20%5BPaste%20Code%20Here%5D%0ABusiness%20Name%3A%20%5BEnter%20Your%20Business%20Name%5D" target="_blank" rel="noopener noreferrer" class="w-full py-4 rounded-xl bg-brand-green hover:bg-emerald-400 text-brand-black font-extrabold text-sm flex items-center justify-center gap-2 transition-all shadow-lg">
-                <span>Confirm Standard Package Payment (KSh 4,500)</span>
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
-              </a>
-
-              <a href="https://wa.me/254758063552?text=Hello%20Biashara%20Web%20Studio%2C%20I%20have%20sent%20an%20M-Pesa%20payment%20to%200758063552.%0A%0APackage%20Selected%3A%20Automated%20M-Pesa%20STK%20Push%20Package%20(KSh%2030%2C000)%0AAmount%20Paid%3A%20KSh%2030%2C000%0AM-Pesa%20Confirmation%20Code%3A%20%5BPaste%20Code%20Here%5D%0ABusiness%20Name%3A%20%5BEnter%20Your%20Business%20Name%5D" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all border border-slate-700">
-                <span>Confirm Automated STK Push Payment (KSh 30,000)</span>
-              </a>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- HOSTING & 100% CODE OWNERSHIP -->
-    <section id="stack" class="py-20 bg-brand-surface border-b border-slate-800">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
-          <div class="lg:col-span-6 space-y-6">
-            <span class="text-xs font-bold tracking-widest uppercase text-brand-green">Independence &amp; Speed</span>
-            <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-white leading-tight">
-              100% Source Code Ownership &amp; Cloudflare Edge Speed.
-            </h2>
-            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
-              Many agencies lock clients into restrictive monthly retainers and refuse to hand over the website files. We believe you should own your business assets completely.
-            </p>
-
-            <div class="space-y-4 pt-2">
-              <div class="flex items-start gap-4 p-4 rounded-xl bg-brand-card border border-slate-800">
-                <div class="w-10 h-10 rounded-lg bg-brand-green/10 text-brand-green flex items-center justify-center font-bold shrink-0">
-                  ⚡
-                </div>
-                <div>
-                  <h4 class="font-display font-bold text-white text-base">Cloudflare Pages &amp; 99.9% Uptime</h4>
-                  <p class="text-xs sm:text-sm text-slate-400 mt-1">Your website runs on Cloudflare's edge network with servers located right in Nairobi for instant local loading.</p>
-                </div>
-              </div>
-
-              <div class="flex items-start gap-4 p-4 rounded-xl bg-brand-card border border-slate-800">
-                <div class="w-10 h-10 rounded-lg bg-brand-accent/10 text-brand-accent flex items-center justify-center font-bold shrink-0">
-                  📁
-                </div>
-                <div>
-                  <h4 class="font-display font-bold text-white text-base">Full GitHub Code Handover</h4>
-                  <p class="text-xs sm:text-sm text-slate-400 mt-1">You own every line of code, images, and files. You are free to host or move your site anywhere without needing our permission.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="lg:col-span-6 bg-brand-card p-8 sm:p-10 rounded-3xl border border-slate-800 space-y-6">
-            <h3 class="font-display text-2xl font-bold text-white border-b border-slate-800 pb-4">
-              Biashara Web Studio Guarantee
-            </h3>
-
-            <div class="space-y-4 text-xs sm:text-sm">
-              <div class="flex justify-between items-center py-2 border-b border-slate-800/60">
-                <span class="text-slate-400">Payment Terms</span>
-                <span class="font-bold text-brand-green">KSh 4,500 deposit, balance upon approval</span>
-              </div>
-              <div class="flex justify-between items-center py-2 border-b border-slate-800/60">
-                <span class="text-slate-400">Code Rights</span>
-                <span class="font-bold text-brand-green">100% Client Owned (GitHub)</span>
-              </div>
-              <div class="flex justify-between items-center py-2 border-b border-slate-800/60">
-                <span class="text-slate-400">Kenyan Payment Methods</span>
-                <span class="font-bold text-brand-green">M-Pesa, Paybill &amp; Till Cards</span>
-              </div>
-              <div class="flex justify-between items-center py-2 border-b border-slate-800/60">
-                <span class="text-slate-400">Hosting Infrastructure</span>
-                <span class="font-bold text-brand-green">Cloudflare Pages (No slow shared servers)</span>
-              </div>
-              <div class="flex justify-between items-center py-2">
-                <span class="text-slate-400">First-Year Domain</span>
-                <span class="font-bold text-brand-green">Included (.co.ke or .com)</span>
-              </div>
-            </div>
-
-            <div class="pt-2">
-              <a href="https://wa.me/254758063552?text=Hello%20Biashara%20Web%20Studio%2C%20I%20have%20questions%20about%20your%20hosting%20and%20code%20ownership." target="_blank" rel="noopener noreferrer" class="w-full py-3.5 bg-brand-green hover:bg-emerald-400 text-brand-black rounded-xl font-extrabold text-xs flex items-center justify-center gap-2 transition-colors">
-                <span>Inquire on WhatsApp (0758 063 552)</span>
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- VERIFIED REVIEWS / TESTIMONIALS (PRIVACY-FOCUSED) -->
-    <section id="reviews" class="py-24 bg-brand-black border-b border-slate-800">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
-          <span class="text-xs font-bold tracking-widest uppercase text-brand-green">Client Feedback</span>
-          <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-white">
-            What Kenyan Business Owners Say
-          </h2>
-          <p class="text-xs bg-emerald-500/10 border border-emerald-500/20 text-brand-green inline-block px-3.5 py-1 rounded-full font-bold">
-            Verified Experiences &middot; Kenyan Hospitality &amp; Retail
-          </p>
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-bold tracking-widest uppercase text-brand-green">Pricing Tiers</span>
+          <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-white mt-3">Simple, Transparent Packages</h2>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
-          <!-- Review 1 -->
-          <div class="bg-brand-surface p-8 rounded-2xl border border-slate-800 flex flex-col justify-between space-y-6">
-            <div class="space-y-4">
-              <div class="text-brand-gold text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-              <p class="text-sm text-slate-300 leading-relaxed italic">
-                &ldquo;Before Biashara Web Studio built our site, guests kept asking for photos and rates manually on WhatsApp. Now our room tiers, gallery, and M-Pesa Buy Goods number are clear. Direct bookings have doubled.&rdquo;
-              </p>
-            </div>
-            <div class="pt-4 border-t border-slate-800 flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-brand-green text-brand-black font-display font-extrabold flex items-center justify-center text-sm">G</div>
-              <div>
-                <div class="text-xs font-bold text-white">Safari Lodge Owner</div>
-                <div class="text-[11px] text-slate-400">Mount Kenya Region</div>
-              </div>
-            </div>
+          <div class="rounded-3xl bg-brand-card border border-slate-800 p-8">
+            <p class="text-sm uppercase tracking-widest text-brand-green font-bold">Starter</p>
+            <h3 class="font-display text-4xl font-extrabold text-white mt-4">KSh 8,500</h3>
+            <p class="mt-4 text-slate-400">For small businesses and micro brands ready to go live quickly.</p>
+            <ul class="mt-6 space-y-3 text-sm text-slate-300">
+              <li>• 1 landing page</li>
+              <li>• Mobile-first design</li>
+              <li>• WhatsApp CTA</li>
+              <li>• M-Pesa details section</li>
+            </ul>
           </div>
 
-          <!-- Review 2 -->
-          <div class="bg-brand-surface p-8 rounded-2xl border border-slate-800 flex flex-col justify-between space-y-6">
-            <div class="space-y-4">
-              <div class="text-brand-gold text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-              <p class="text-sm text-slate-300 leading-relaxed italic">
-                &ldquo;The KSh 4,500 deposit milestone gave us peace of mind. We inspected our completed hotel website before paying the balance. Fast, transparent, and dependable service.&rdquo;
-              </p>
-            </div>
-            <div class="pt-4 border-t border-slate-800 flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-brand-green text-brand-black font-display font-extrabold flex items-center justify-center text-sm">W</div>
-              <div>
-                <div class="text-xs font-bold text-white">Boutique Resort Manager</div>
-                <div class="text-[11px] text-slate-400">Naivasha</div>
-              </div>
-            </div>
+          <div class="rounded-3xl bg-brand-green text-brand-black border border-brand-green p-8 shadow-2xl ring-2 ring-brand-green/40">
+            <p class="text-sm uppercase tracking-widest font-bold">Most Popular</p>
+            <h3 class="font-display text-4xl font-extrabold mt-4">KSh 18,500</h3>
+            <p class="mt-4 text-brand-black/80">Ideal for lodges, restaurants, and growing hospitality brands.</p>
+            <ul class="mt-6 space-y-3 text-sm font-semibold">
+              <li>• Multi-section website</li>
+              <li>• Property gallery</li>
+              <li>• Review/testimonial blocks</li>
+              <li>• Direct booking messaging</li>
+            </ul>
           </div>
 
-          <!-- Review 3 -->
-          <div class="bg-brand-surface p-8 rounded-2xl border border-slate-800 flex flex-col justify-between space-y-6">
-            <div class="space-y-4">
-              <div class="text-brand-gold text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-              <p class="text-sm text-slate-300 leading-relaxed italic">
-                &ldquo;The Cloudflare hosting is blazing fast. Guests tap the WhatsApp reservation button, and their room preference is pre-filled. We stopped paying crazy OTA commissions.&rdquo;
-              </p>
-            </div>
-            <div class="pt-4 border-t border-slate-800 flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-brand-green text-brand-black font-display font-extrabold flex items-center justify-center text-sm">D</div>
-              <div>
-                <div class="text-xs font-bold text-white">Guest House &amp; Grill Operator</div>
-                <div class="text-[11px] text-slate-400">Nairobi</div>
-              </div>
-            </div>
+          <div class="rounded-3xl bg-brand-card border border-slate-800 p-8">
+            <p class="text-sm uppercase tracking-widest text-brand-green font-bold">Growth</p>
+            <h3 class="font-display text-4xl font-extrabold text-white mt-4">Custom</h3>
+            <p class="mt-4 text-slate-400">For larger brands needing advanced features, pages, and custom flows.</p>
+            <ul class="mt-6 space-y-3 text-sm text-slate-300">
+              <li>• Custom integrations</li>
+              <li>• Extra pages</li>
+              <li>• CRM or lead capture</li>
+              <li>• SEO optimisation</li>
+            </ul>
           </div>
-
         </div>
-
       </div>
     </section>
 
-    <!-- FAQ SECTION -->
-    <section id="faq" class="py-20 bg-brand-surface">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="text-center mb-14 space-y-3">
-          <span class="text-xs font-bold tracking-widest uppercase text-brand-green">Answers You Need</span>
-          <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-white">
-            Frequently Asked Questions
-          </h2>
+    <section id="payment-info" class="py-20 bg-brand-black">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          <div>
+            <span class="text-xs font-bold tracking-widest uppercase text-brand-green">M-Pesa Payment</span>
+            <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-white mt-3">Simple, Secure Deposit Process</h2>
+            <p class="text-slate-400 mt-5 leading-relaxed">
+              We make payment easy and transparent. You can deposit to the studio account and continue with design approval only after the final version is confirmed.
+            </p>
+            <div class="mt-8 rounded-2xl border border-slate-700 bg-brand-surface p-6">
+              <p class="text-xs uppercase tracking-widest text-slate-400">Paybill / Send Money</p>
+              <h3 class="font-display text-3xl font-extrabold text-white mt-2">0758 063 552</h3>
+              <p class="mt-3 text-slate-300">Use the business number above and include your business name in the reference.</p>
+            </div>
+          </div>
+
+          <div class="rounded-3xl border border-slate-800 bg-brand-surface p-8">
+            <div class="space-y-5">
+              <div class="flex gap-4">
+                <div class="w-9 h-9 rounded-full bg-brand-green/15 text-brand-green font-bold flex items-center justify-center">1</div>
+                <div>
+                  <h3 class="font-display text-xl font-bold text-white">Request a quote</h3>
+                  <p class="text-slate-400 text-sm">Tell us what type of business you run and the features you need.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="w-9 h-9 rounded-full bg-brand-green/15 text-brand-green font-bold flex items-center justify-center">2</div>
+                <div>
+                  <h3 class="font-display text-xl font-bold text-white">Pay deposit</h3>
+                  <p class="text-slate-400 text-sm">Make your deposit via M-Pesa and share the confirmation message.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="w-9 h-9 rounded-full bg-brand-green/15 text-brand-green font-bold flex items-center justify-center">3</div>
+                <div>
+                  <h3 class="font-display text-xl font-bold text-white">Approve final design</h3>
+                  <p class="text-slate-400 text-sm">We complete the site, send the final build, and settle any remaining balance.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="space-y-4">
-          
-          <!-- FAQ 1 -->
-          <details class="group bg-brand-card border border-slate-800 rounded-2xl p-6 open:border-brand-green/60 transition-colors">
-            <summary class="font-display font-bold text-white text-base cursor-pointer list-none flex justify-between items-center">
-              <span>How do I pay the KSh 4,500 deposit?</span>
-              <span class="text-brand-green transition group-open:rotate-180">&#9662;</span>
-            </summary>
-            <p class="text-xs sm:text-sm text-slate-300 mt-4 leading-relaxed">
-              Go to M-Pesa &rarr; Send Money &rarr; Enter <strong>0758063552</strong> &rarr; Enter KSh 4,500. Once sent, forward your confirmation text via WhatsApp to the same number (0758063552) with your business name to begin work immediately.
-            </p>
-          </details>
-
-          <!-- FAQ 2 -->
-          <details class="group bg-brand-card border border-slate-800 rounded-2xl p-6 open:border-brand-green/60 transition-colors">
-            <summary class="font-display font-bold text-white text-base cursor-pointer list-none flex justify-between items-center">
-              <span>When is the KSh 4,000 balance paid?</span>
-              <span class="text-brand-green transition group-open:rotate-180">&#9662;</span>
-            </summary>
-            <p class="text-xs sm:text-sm text-slate-300 mt-4 leading-relaxed">
-              We build your complete working website on a private preview link. You review it on your smartphone. Only when you are completely satisfied with the design and layout do you pay the remaining KSh 4,000 balance before we connect your final domain.
-            </p>
-          </details>
-
-          <!-- FAQ 3 -->
-          <details class="group bg-brand-card border border-slate-800 rounded-2xl p-6 open:border-brand-green/60 transition-colors">
-            <summary class="font-display font-bold text-white text-base cursor-pointer list-none flex justify-between items-center">
-              <span>Do I really own 100% of the code?</span>
-              <span class="text-brand-green transition group-open:rotate-180">&#9662;</span>
-            </summary>
-            <p class="text-xs sm:text-sm text-slate-300 mt-4 leading-relaxed">
-              Yes. You receive original source code files and your own GitHub repository. You are never locked in and can transfer or deploy your site to any host in the world whenever you wish.
-            </p>
-          </details>
-
-          <!-- FAQ 4 -->
-          <details class="group bg-brand-card border border-slate-800 rounded-2xl p-6 open:border-brand-green/60 transition-colors">
-            <summary class="font-display font-bold text-white text-base cursor-pointer list-none flex justify-between items-center">
-              <span>What are the ongoing costs from Year 2 onwards?</span>
-              <span class="text-brand-green transition group-open:rotate-180">&#9662;</span>
-            </summary>
-            <p class="text-xs sm:text-sm text-slate-300 mt-4 leading-relaxed">
-              Your 1st-year domain is covered. From Year 2 onwards, annual domain renewal (.co.ke or .com) and ongoing Cloudflare DNS management runs between KSh 3,000 and KSh 5,000 per year. There are zero mandatory monthly agency fees.
-            </p>
-          </details>
-
-        </div>
-
       </div>
     </section>
 
-    <!-- FINAL CALL TO ACTION STRIP -->
-    <section class="py-20 bg-gradient-to-b from-brand-surface to-brand-black border-t border-slate-800 text-center relative overflow-hidden">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 relative z-10">
-        <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-white">
-          Ready to Turn Visitors Into Paying Guests?
-        </h2>
-        <p class="text-sm sm:text-base text-slate-300 max-w-xl mx-auto leading-relaxed">
-          Request a free, no-obligation mobile design concept for your hotel, lodge, restaurant, or business today.
-        </p>
-        <div class="pt-2">
-          <a href="https://wa.me/254758063552?text=Hello%20Biashara%20Web%20Studio%2C%20I%20want%20to%20request%20a%20free%20sample%20preview%20for%20my%20business." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 bg-brand-green hover:bg-emerald-400 text-brand-black font-extrabold px-8 py-4 rounded-xl shadow-xl glow-green transition-all transform hover:-translate-y-0.5">
-            <span>Enquire on WhatsApp (0758 063 552)</span>
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
-          </a>
+    <section id="stack" class="py-20 bg-brand-surface border-y border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-bold tracking-widest uppercase text-brand-green">Cloudflare &amp; Code Ownership</span>
+          <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-white mt-3">Built to Stay Fast, Secure, and Yours</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="rounded-3xl bg-brand-card border border-slate-800 p-8">
+            <h3 class="font-display text-2xl font-bold text-white">Cloudflare Pages</h3>
+            <p class="text-slate-400 mt-4">Fast, secure static hosting with global performance and minimal maintenance.</p>
+          </div>
+          <div class="rounded-3xl bg-brand-card border border-slate-800 p-8">
+            <h3 class="font-display text-2xl font-bold text-white">Custom Code</h3>
+            <p class="text-slate-400 mt-4">Everything is built to be clean, editable, and easy to extend by your team or a developer.</p>
+          </div>
+          <div class="rounded-3xl bg-brand-card border border-slate-800 p-8">
+            <h3 class="font-display text-2xl font-bold text-white">100% Ownership</h3>
+            <p class="text-slate-400 mt-4">You own the source code, the website files, and the setup process with no hidden lock-in.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="py-20 bg-brand-black">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <span class="text-xs font-bold tracking-widest uppercase text-brand-green">FAQs</span>
+          <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-white mt-3">Everything You Need to Know</h2>
+        </div>
+
+        <div class="space-y-5">
+          <div class="rounded-2xl border border-slate-800 bg-brand-surface p-6">
+            <h3 class="font-display text-xl font-bold text-white">How long does it take?</h3>
+            <p class="text-slate-400 mt-2">Most standard landing pages take 3–7 days depending on content and approval speed.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-800 bg-brand-surface p-6">
+            <h3 class="font-display text-xl font-bold text-white">Do I own the website?</h3>
+            <p class="text-slate-400 mt-2">Yes. You own the final website files and the design source used for your business website.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-800 bg-brand-surface p-6">
+            <h3 class="font-display text-xl font-bold text-white">Can I add more pages later?</h3>
+            <p class="text-slate-400 mt-2">Yes. We can expand the site with more sections, booking pages, service pages, and content updates.</p>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- FOOTER -->
-  <footer class="bg-brand-black text-slate-400 py-16 border-t border-slate-800 text-xs sm:text-sm">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
-        
-        <div class="space-y-3">
-          <div class="font-display text-xl font-bold tracking-tight text-white">BIASHARA WEB STUDIO</div>
-          <p class="text-xs text-slate-400 leading-relaxed">
-            High-converting, mobile-ready websites engineered for Kenyan hotels, resorts, lodges, restaurants, and small businesses.
-          </p>
-        </div>
-
-        <div class="space-y-2">
-          <h4 class="font-display text-sm font-bold text-white uppercase tracking-wider">Packages</h4>
-          <ul class="space-y-1.5 text-xs text-slate-400">
-            <li>Standard Mobile Plan (KSh 8,500)</li>
-            <li>Automated STK Push (KSh 30,000)</li>
-            <li>Direct WhatsApp Booking Links</li>
-            <li>M-Pesa Buy Goods &amp; Paybill Setup</li>
-            <li>Cloudflare &amp; GitHub Deployment</li>
-          </ul>
-        </div>
-
-        <div class="space-y-2">
-          <h4 class="font-display text-sm font-bold text-white uppercase tracking-wider">Live Showcase</h4>
-          <ul class="space-y-1.5 text-xs text-slate-400">
-            <li><a href="https://chogoria-cabin.pages.dev/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-green transition-colors">Chogoria Cabin &rarr;</a></li>
-            <li>Mount Kenya Tourism Demo</li>
-            <li>Custom SME Portfolio Previews</li>
-          </ul>
-        </div>
-
-        <div class="space-y-3">
-          <h4 class="font-display text-sm font-bold text-white uppercase tracking-wider">M-Pesa &amp; WhatsApp</h4>
-          <p class="text-xs text-slate-400 leading-relaxed">
-            M-Pesa &amp; WhatsApp: <strong class="text-white">0758 063 552</strong><br />
-            Kenya &middot; Serving Nairobi, Mount Kenya, Coast &amp; Rift Valley
-          </p>
-          <button onclick="copyMpesaNumber()" class="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs text-white font-semibold transition-colors border border-slate-700">
-            Copy M-Pesa Number
-          </button>
-        </div>
-
-      </div>
-
-      <div class="mt-12 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-4">
-        <div>
-          &copy; <span id="current-year"></span> Biashara Web Studio. All rights reserved.
-        </div>
-        <div>
-          Built for Kenyan Businesses &middot; Deployed on Cloudflare Edge
-        </div>
+  <footer class="border-t border-slate-800 bg-brand-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-400">
+      <p>© 2026 Biashara Web Studio • Built for Kenyan businesses</p>
+      <div class="flex items-center gap-5">
+        <a href="https://wa.me/254758063552" target="_blank" rel="noopener noreferrer" class="hover:text-brand-green">WhatsApp</a>
+        <a href="#payment-info" class="hover:text-brand-green">M-Pesa</a>
+        <a href="#portfolio" class="hover:text-brand-green">Portfolio</a>
       </div>
     </div>
   </footer>
 
-  <!-- FLOATING WHATSAPP BUTTON -->
-  <aside aria-label="WhatsApp quick contact">
-    <a href="https://wa.me/254758063552?text=Hello%20Biashara%20Web%20Studio%2C%20I%20want%20to%20request%20a%20free%20sample%20preview%20for%20my%20business." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 bg-brand-green hover:bg-emerald-400 text-brand-black p-4 rounded-full shadow-2xl flex items-center gap-2 group transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-emerald-300 glow-green" aria-label="Chat on WhatsApp">
-      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
-      <span class="hidden sm:inline font-bold text-xs tracking-wide">WhatsApp 0758 063 552</span>
-    </a>
-  </aside>
-
-  <!-- TOAST FEEDBACK NOTIFICATION -->
-  <div id="toast" class="fixed bottom-20 left-1/2 -translate-x-1/2 bg-brand-surface text-white text-xs px-5 py-3 rounded-full shadow-xl opacity-0 pointer-events-none transition-opacity duration-300 z-50 flex items-center gap-2 border border-slate-700">
-    <svg class="w-4 h-4 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-    <span id="toast-message">Notification</span>
-  </div>
-
-  <!-- JAVASCRIPT LOGIC -->
   <script>
-    document.getElementById('current-year').textContent = new Date().getFullYear();
-
     function toggleMobileMenu() {
-      document.getElementById('mobile-menu').classList.toggle('hidden');
-    }
-
-    async function copyMpesaNumber() {
-      const number = "0758063552";
-      if (navigator.clipboard) {
-        await navigator.clipboard.writeText(number);
-        showToast("M-Pesa Number 0758063552 copied to clipboard!");
-      } else {
-        const dummy = document.createElement("input");
-        document.body.appendChild(dummy);
-        dummy.value = number;
-        dummy.select();
-        document.execCommand("copy");
-        document.body.removeChild(dummy);
-        showToast("M-Pesa Number 0758063552 copied to clipboard!");
-      }
-    }
-
-    let toastTimer;
-    function showToast(msg) {
-      const toast = document.getElementById('toast');
-      document.getElementById('toast-message').textContent = msg;
-      toast.classList.remove('opacity-0', 'pointer-events-none');
-      clearTimeout(toastTimer);
-      toastTimer = setTimeout(() => toast.classList.add('opacity-0', 'pointer-events-none'), 3500);
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
     }
   </script>
 </body>
